@@ -1,6 +1,6 @@
 var fs = require('fs');
-var data = {
-  anime: [{
+var data = [
+  {
     animeName: 'Sailor Moon',
     rating: '9.5/10',
     genre: 'Magical girl',
@@ -25,8 +25,8 @@ var data = {
     rating: '10/10',
     genre: 'Adventure, Fantasy, Supernatural',
     favoriteCharacter: 'Mista, Joskue, Bruno, Ceasar, Jotaro'
-  }]
-}
+  }
+]
 
 fs.writeFile('animeList.json', JSON.stringify(data),(err) => {
   if(err)
